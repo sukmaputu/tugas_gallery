@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anargya Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" id="anargyaNavbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Anargya</a> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a> 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="p-5 text-white text-center w-100" id="anargyaJumbotron">
+      <div class="container py-5">
+        <h1 class="display-4">Gallery Anargya ITS</h1>
+        <p class="lead">Mengukir inovasi, memajukan bangsa.</p>
+      </div>
+    </div>
+
+    <div class="gallery-section">
+      <div class="container gallery-container">
+          <div class="slide">
+              
+              <div class="item" style="--bg-image: url('./img/a1.jpeg');">
+                  <div class="content">
+                      <div class="name">Istirahat Sejenak</div>
+                      <div class="des">Menikmati jalan tunjungan</div>
+                      <button class="btn btn-sm btn-outline-light">Lihat Detail</button>
+                  </div>
+              </div>
+              <div class="item" style="--bg-image: url('./img/a2.jpeg');">
+                  <div class="content">
+                      <div class="name">Estetika Jalan</div>
+                      <div class="des">Melihat pemandangan yang menyejukkan</div>
+                      <button class="btn btn-sm btn-outline-light">Lihat Detail</button>
+                  </div>
+              </div>
+              <div class="item" style="--bg-image: url('./img/a3.jpeg');">
+                  <div class="content">
+                      <div class="name">Destinasi Wisata</div>
+                      <div class="des">Berbagung bersama orang ramai</div>
+                      <button class="btn btn-sm btn-outline-light">Lihat Detail</button>
+                  </div>
+              </div>
+              <div class="item" style="--bg-image: url('./img/a4.jpeg');">
+                  <div class="content">
+                      <div class="name">Mencari Sela Istirahat</div>
+                      <div class="des">Menikmati indfahnya hidup</div>
+                      <button class="btn btn-sm btn-outline-light">Lihat Detail</button>
+                  </div>
+              </div>
+              <div class="item" style="--bg-image: url('./img/a5.jpeg');">
+                  <div class="content">
+                      <div class="name">Refleksi Diri</div>
+                      <div class="des">Memahami kekurangan dan kelebihan kami</div>
+                      <button class="btn btn-sm btn-outline-light">Lihat Detail</button>
+                  </div>
+              </div>
+
+          </div>
+
+          <div class="button">
+              <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+              <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+      let next = document.querySelector('.next')
+      let prev = document.querySelector('.prev')
+
+      next.addEventListener('click', function(){
+          let items = document.querySelectorAll('.item')
+          document.querySelector('.slide').appendChild(items[0])
+      })
+
+      prev.addEventListener('click', function(){
+          let items = document.querySelectorAll('.item')
+          document.querySelector('.slide').prepend(items[items.length - 1])
+      })
+    </script>
+  </body>
+</html>
