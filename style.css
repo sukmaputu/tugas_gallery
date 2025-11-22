@@ -74,7 +74,7 @@ body {
     font-size: 4em; 
     margin-bottom: 0.15em;
     font-weight: 700;
-    border-bottom: 3px solid #29D970; 
+    color: #29D970;
     padding-bottom: 10px;
     display: inline-block; 
 }
