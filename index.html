@@ -20,7 +20,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
       <div class="container">
-        <a class="navbar-brand" href="#">Anargya</a>
+        <h1 class="navbar-brand" href="#">Anargya</h1>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <h4 class="nav-link active" aria-current="page" href="#">Home</h4>
             </li>
           </ul>
         </div>
@@ -41,7 +41,7 @@
     <section class="home-section d-flex align-items-center">
       <div class="overlay"></div>
       <div class="container text-center content">
-        <h1 class="display-4 fw-bold work-sans">Anargya Journey</h1>
+        <h1 class="display-4 fw-bold work-sans anargya-title">Anargya Journey</h1>
         <p class="lead">istirahat di kala sibuk</p>
       </div>
     </section>
@@ -128,6 +128,8 @@
         <div class="container">
           <div class="row g-4 pinterest-grid">
 
+            <h3 class="text-center">Pinterest</h3>
+
             <div class="col-sm-6 col-md-4 col-lg-3 pin-col">
               <div class="pin-item">
                 <img class="pin-img" src="./img/c1.jpeg" alt="">
@@ -204,6 +206,125 @@
         </div>
       </section>
 
+      <div class="container">
+    <h2 class="text-center mb-4 fw-bold">Gallery</h2>
+
+    <div class="row g-3 mb-4">
+
+        <div class="col-6 col-md-2">
+            <div class="img-wrapper">
+                <img src="./img/d1.jpeg" class="gallery-img" data-bs-toggle="modal"
+                    data-bs-target="#imageModal" onclick="setModal(this.src)">
+                <span>Lihat & Unduh</span>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+            <div class="img-wrapper">
+                <img src="./img/d2.jpeg" class="gallery-img" data-bs-toggle="modal"
+                    data-bs-target="#imageModal" onclick="setModal(this.src)">
+                <span>Lihat & Unduh</span>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+            <div class="img-wrapper">
+                <img src="./img/d3.jpeg" class="gallery-img" data-bs-toggle="modal"
+                    data-bs-target="#imageModal" onclick="setModal(this.src)">
+                <span>Lihat & Unduh</span>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+            <div class="img-wrapper">
+                <img src="./img/d4.jpeg" class="gallery-img" data-bs-toggle="modal"
+                    data-bs-target="#imageModal" onclick="setModal(this.src)">
+                <span>Lihat & Unduh</span>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+            <div class="img-wrapper">
+                <img src="./img/d5.jpeg" class="gallery-img" data-bs-toggle="modal"
+                    data-bs-target="#imageModal" onclick="setModal(this.src)">
+                <span>Lihat & Unduh</span>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+            <div class="img-wrapper">
+                <img src="./img/d6.jpeg" class="gallery-img" data-bs-toggle="modal"
+                    data-bs-target="#imageModal" onclick="setModal(this.src)">
+                <span>Lihat & Unduh</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-3">
+
+        <div class="col-6 col-md-2">
+            <div class="img-wrapper">
+                <img src="./img/d7.jpeg" class="gallery-img" data-bs-toggle="modal"
+                    data-bs-target="#imageModal" onclick="setModal(this.src)">
+                <span>Lihat & Unduh</span>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+            <div class="img-wrapper">
+                <img src="./img/d8.jpeg" class="gallery-img" data-bs-toggle="modal"
+                    data-bs-target="#imageModal" onclick="setModal(this.src)">
+                <span>Lihat & Unduh</span>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+            <div class="img-wrapper">
+                <img src="./img/d9.jpeg" class="gallery-img" data-bs-toggle="modal"
+                    data-bs-target="#imageModal" onclick="setModal(this.src)">
+                <span>Lihat & Unduh</span>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+            <div class="img-wrapper">
+                <img src="./img/d10.jpeg" class="gallery-img" data-bs-toggle="modal"
+                    data-bs-target="#imageModal" onclick="setModal(this.src)">
+                <span>Lihat & Unduh</span>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+            <div class="img-wrapper">
+                <img src="./img/d11.jpeg" class="gallery-img" data-bs-toggle="modal"
+                    data-bs-target="#imageModal" onclick="setModal(this.src)">
+                <span>Lihat & Unduh</span>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+            <div class="img-wrapper">
+                <img src="./img/d12.jpeg" class="gallery-img" data-bs-toggle="modal"
+                    data-bs-target="#imageModal" onclick="setModal(this.src)">
+                <span>Lihat & Unduh</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content p-3">
+            <img id="modalImage" src="" class="img-fluid rounded mb-3" />
+
+            <!-- <button class="btn btn-success w-100" onclick="downloadImage()">
+                Unduh
+            </button> -->
+        </div>
+    </div>
+</div>
 
       <!-- Footer -->
       <footer class="footer-section py-4">
@@ -238,6 +359,22 @@
             gutter: 16
           });
         });
+
+     let currentImageSrc = "";
+
+function setModal(src) {
+    document.getElementById("modalImage").src = src;
+    currentImageSrc = src; 
+}
+
+// function downloadImage() {
+//     const link = document.createElement("a");
+//     link.href = currentImageSrc;
+//     link.download = currentImageSrc.substring(currentImageSrc.lastIndexOf('/') + 1);
+//     document.body.appendChild(link);
+//     link.click();
+//     document.body.removeChild(link);
+// }
     </script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
