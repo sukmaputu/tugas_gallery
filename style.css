@@ -194,42 +194,49 @@ body {
   font-weight: 600;
 }
 
-.pin-item {
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-}
-
-.pin-img {
-  width: 100%;
-  display: block;
-}
-
-
+/* pinterest */
 .pinterest-section {
-  padding: 50px 0 120px; 
+  padding: 50px 0 120px;
   background: #1c1c1c;
+  column-count: 4;
+  column-gap: 20px;
+  margin-bottom: 80px; 
 }
 
-.pin-col {
-  break-inside: avoid;
+@media (max-width: 992px) {
+  .pinterest-section {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .pinterest-section {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .pinterest-section {
+    column-count: 1;
+  }
 }
 
 .pin-item {
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  break-inside: avoid;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
 }
 
 .pin-img {
   width: 100%;
+  border-radius: 10px;
   display: block;
 }
 
 
 
+/* Gallery */
 .gallery-img {
     width: 100%;
     border-radius: 10px;
@@ -322,9 +329,6 @@ body {
     height: 35px;
   }
 
-  .pin-col {
-    width: 50%;
-  }
 
   .gallery-img {
     border-radius: 8px;
@@ -349,8 +353,48 @@ body {
     width: 100px;
     height: 150px;
   }
+}
 
-  .pin-col {
-    width: 50%;
-  }
+
+/* modal peringatan */
+.cookie-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  border: 2px solid #29D970;
+}
+
+#cookieSvg g path {
+  fill: #1c1c1c;
+}
+
+.cookieDescription {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.acceptButton {
+  background-color: #29D970;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 20px;
+  transition: .2s;
+}
+
+.acceptButton:hover {
+  background-color: #1B563B;
+  color: white;
+}
+
+.declineButton {
+  background-color: #e6e6e6;
+  color: #1c1c1c;
+  font-weight: 600;
+  border-radius: 20px;
+  transition: .2s;
+}
+
+.declineButton:hover {
+  background-color: #cccccc;
 }
